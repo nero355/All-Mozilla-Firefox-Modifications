@@ -1,4 +1,4 @@
-## All-Mozilla-Firefox-about-config-userChrome.css-Modifications
+## All Mozilla Firefox about:config & userChrome.css Modifications
 Everything needed to make Firefox useable again!
 
 ### All <a href="about:config">'about:config'</a> options used so far :
@@ -18,3 +18,7 @@ browser.tabs.hoverPreview.enabled false
 browser.tas.hoverPreview.showThumbnails false
 
 ### For everything else modded see the 'chrome' directory uploaded to this repository !!
+
+
+**Disclaimer :** Everything you can find in the userChrome.css can be found elsewhere on the web!<br>
+So if you recognize your own code by any chance : Thank you for helping others with their Firefox related modifications! ;)
