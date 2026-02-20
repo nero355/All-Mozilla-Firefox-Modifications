@@ -1,0 +1,90 @@
+/* Make sure EVERYTHING looks SHARP again! */
+* {
+    border-radius: 0 !important;
+}
+
+:root {
+  --tab-border-radius: 0 !important;
+}
+
+menupopup,
+panel {
+   --panel-border-radius: 0 !important;
+ }
+
+:root {
+  --toolbarbutton-border-radius: 0 !important;
+}
+/* Make sure EVERYTHING looks SHARP again! */
+
+
+
+/* Remove the Hamburger Button */
+#PanelUI-menu-button {display: none;}
+/* Remove the Hamburger Button */
+
+
+/* Remove space above tabs */
+.tab-background { margin-block: 0 var(--tab-block-margin) !important; }
+/* Remove space above tabs */
+
+
+/* Remove Active Tab shadow */
+:root { --lwt-tab-line-color: transparent !important; }
+/* Remove Active Tab shadow */
+
+
+/* Remove 'floating' Active Tab - Connect background of Active Tab to Nav Bar background */
+.tabbrowser-tab[selected] .tab-background { margin-bottom: 0px !important; }
+.tabbrowser-tab:not([selected]) .tab-background { margin-bottom: 0px !important; }
+/* Remove 'floating' Active Tab - Connect background of Active Tab to Nav Bar background */
+
+
+/* Remove 1px separator line */
+:root { --tabs-navbar-separator-style: none !important; }
+/* Remove 1px separator line */
+
+
+/* Megabar: disable breakout / expanding onto toolbar *********************** */
+#urlbar[breakout][breakout-extend] {
+  margin-left: 0 !important;
+  width: var(--urlbar-width) !important;
+  margin-top: calc((var(--urlbar-container-height) - var(--urlbar-height)) / 2) !important;
+
+
+  > .urlbar-input-container {
+    height: var(--urlbar-height) !important;
+    padding-block: var(--urlbar-container-padding) !important;
+    padding-inline: var(--urlbar-container-padding) !important;
+  }
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  animation-name: unset !important;
+}
+
+#urlbar[breakout][breakout-extend] > :is(#urlbar-input-container,.urlbar-input-container) {
+  height: var(--urlbar-height) !important;
+  padding-block: 1px !important;
+  padding-inline: 1px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+/* disable result item roundness */
+#urlbar[breakout] .urlbarView-row-inner {
+  border-radius: 0px !important;
+}
+
+/* disable 'breakout' animation */
+#urlbar[breakout],
+#urlbar[breakout] * {
+  animation: unset !important;
+  duration: 0s !important;
+  animation-duration: 0s !important;
+}
+
+.urlbarView-body-inner {
+  border-top: 0px !important;
+}
+/* Megabar: disable breakout / expanding onto toolbar *********************** */
