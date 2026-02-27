@@ -18,20 +18,36 @@ panel {
 /* Make sure EVERYTHING looks SHARP again! */
 
 
+/* Share... needs to go! */
+#plasma-browser-integration_kde_org-menuitem-_purpose_share_tab
+{
+    display: none !important;
+}
+
+#plasma-browser-integration_kde_org-menuitem-_purpose_share
+{
+    display: none !important;
+}
+/* Share... needs to go!*/
+
+
+/* Tabs where they belong! */
+#TabsToolbar{
+    order: 1;
+  }
+/* Tabs where they belong! */
+
 
 /* Remove the Hamburger Button */
-#PanelUI-menu-button {display: none;}
+#PanelUI-menu-button {
+    display: none !important;
+}
 /* Remove the Hamburger Button */
 
 
 /* Remove space above tabs */
 .tab-background { margin-block: 0 var(--tab-block-margin) !important; }
 /* Remove space above tabs */
-
-
-/* Remove Active Tab shadow */
-:root { --lwt-tab-line-color: transparent !important; }
-/* Remove Active Tab shadow */
 
 
 /* Remove 'floating' Active Tab - Connect background of Active Tab to Nav Bar background */
@@ -88,3 +104,19 @@ panel {
   border-top: 0px !important;
 }
 /* Megabar: disable breakout / expanding onto toolbar *********************** */
+
+
+* Menubar item padding */
+}
+:root[uidensity="compact"] {
+  --global-menubar-padding: 1px;
+}
+#main-menubar > menu {
+  padding-block: var(--global-menubar-padding) !important;
+}
+/* Menubar item padding */
+
+
+/* Match System Theme Colors - Debian - KDE Plasma 6 - Breeze Classic */
+#nav-bar { background-color: transparent !important; }
+/* Match System Theme Colors - Debian - KDE Plasma 6 - Breeze Classic */
